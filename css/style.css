@@ -2,10 +2,11 @@
  *       Override CSS Framework
  * --------------------------------- */
 html {
-  font-size: 14px;
+  font-size: 20px;
 }
 body {
-  background-color: #f7f7f7;
+  background-color: rgba(255,255,255,0.8);
+  background: url("/images/1608-11.jpg") no-repeat 0px 0px;
 }
 body,
 button,
