@@ -146,11 +146,15 @@ $(document).ready(function () {
         }
     }
 
-    update();
-    $(window).resize(update);
-    $(window).scroll(update);
+    
 
-    $('#back-to-top').on('click', function () {
-        $('body, html').animate({ scrollTop: 0 }, 400);
-    });
+     update();
+     $(window).resize(update);
+     $(window).scroll(update);
+
+     $('#back-to-top').click(function(){
+        
+         $('html,body').animate({ scrollTop: 0 }, 400);
+     });
+    
 });
