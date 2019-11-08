@@ -7,19 +7,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: Test - Ashinwz&#39;s TechRoom</title>
+<title>Nginx 配置 - Ashinwz&#39;s TechRoom</title>
 
 
-    <meta name="description" content="Tell me the meaning of 7968541">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ashinwz&#39;s TechRoom">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;Test&#x2F;index.html">
+    <meta name="description" content="在windows中配置nginx：    1. 实现端口转发；    2. 实现域名转发； Start Nginx server12&amp;gt;cd &amp;lt;&amp;apos;nginx installation dir&amp;apos;&amp;gt;&amp;gt;nginx.exe  Edit Configuration of server port1234567#编辑nginx.conf,使用时取消以下注释#server &amp;#123;	#l">
+<meta name="keywords" content="Study">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nginx 配置">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;nginx%20conf&#x2F;index.html">
 <meta property="og:site_name" content="Ashinwz&#39;s TechRoom">
-<meta property="og:description" content="Tell me the meaning of 7968541">
+<meta property="og:description" content="在windows中配置nginx：    1. 实现端口转发；    2. 实现域名转发； Start Nginx server12&amp;gt;cd &amp;lt;&amp;apos;nginx installation dir&amp;apos;&amp;gt;&amp;gt;nginx.exe  Edit Configuration of server port1234567#编辑nginx.conf,使用时取消以下注释#server &amp;#123;	#l">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;1956-11.jpg">
+<meta property="og:updated_time" content="2019-11-08T03:09:46.508Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;og_image.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;1956-11.jpg">
 
 
 
@@ -76,7 +78,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/Logo_1.svg" alt="Ashinwz&#39;s TechRoom" height="28">
+                <img src="/images/Logo_1.svg" alt="Nginx 配置" height="28">
             
             </a>
         </div>
@@ -128,41 +130,30 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">Test</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
 <div class="card">
     
     <div class="card-image">
-        <a href="/2019/11/07/My-first-Record/" class="image is-7by1">
-            <img class="thumbnail" src="/images/alex.jpg" alt="My first Record">
-        </a>
+        <span  class="image is-7by1">
+            <img class="thumbnail" src="/images/1956-11.jpg" alt="Nginx 配置">
+        </span>
     </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-11-07T10:43:56.000Z">2019-11-07</time>
+                <time class="level-item has-text-grey" datetime="2019-11-08T03:05:36.570Z">2019-11-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                <a class="has-link-grey -link" href="/categories/nginx/">nginx</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 19 个字)
+                    1 分钟 读完 (大约 129 个字)
                 </span>
                 
                 
@@ -171,17 +162,29 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/11/07/My-first-Record/">My first Record</a>
+                Nginx 配置
             
         </h1>
         <div class="content">
-            <h2 id="快速部署"><a href="#快速部署" class="headerlink" title="快速部署"></a>快速部署</h2><p>直接通过以下命令部署Blog</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sh ./autohexo.sh</span><br></pre></td></tr></table></figure>
+            <p>在windows中配置nginx：<br>    1. 实现端口转发；<br>    2. 实现域名转发；</p>
+<h3 id="Start-Nginx-server"><a href="#Start-Nginx-server" class="headerlink" title="Start Nginx server"></a>Start Nginx server</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="hljs-built_in">cd</span> &lt;<span class="hljs-string">'nginx installation dir'</span>&gt;</span><br><span class="line">&gt;nginx.exe</span><br></pre></td></tr></table></figure>
 
+<h3 id="Edit-Configuration-of-server-port"><a href="#Edit-Configuration-of-server-port" class="headerlink" title="Edit Configuration of server port"></a>Edit Configuration of server port</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#编辑nginx.conf,使用时取消以下注释</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#server &#123;</span></span><br><span class="line">	<span class="hljs-comment">#listen	80; (此处可以修改nginx端口)</span></span><br><span class="line">	<span class="hljs-comment">#server_name localhost;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#&#125;</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="Proxy-for-Port"><a href="#Proxy-for-Port" class="headerlink" title="Proxy for Port"></a>Proxy for Port</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 添加upstream,使用时取消以下注释</span></span><br><span class="line"><span class="hljs-comment"># upstream ng_server &#123;</span></span><br><span class="line">	<span class="hljs-comment">#server localhost:90(此处修改为代理端口)</span></span><br><span class="line"><span class="hljs-comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># server &#123;</span></span><br><span class="line">	<span class="hljs-comment">#location / &#123;</span></span><br><span class="line">		<span class="hljs-comment">#proxy_pass http://ng_server</span></span><br><span class="line">	<span class="hljs-comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#&#125;</span></span><br></pre></td></tr></table></figure>
 
+<h3 id="Proxy-for-Domain-Name"><a href="#Proxy-for-Domain-Name" class="headerlink" title="Proxy for Domain Name"></a>Proxy for Domain Name</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 使用时取消以下注释</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># server &#123;</span></span><br><span class="line">	<span class="hljs-comment">#location / &#123;</span></span><br><span class="line">		<span class="hljs-comment">#proxy_pass http://www.baidu.com</span></span><br><span class="line">	<span class="hljs-comment">#&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#&#125;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Stop-Nginx"><a href="#Stop-Nginx" class="headerlink" title="Stop Nginx"></a>Stop Nginx</h3><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;nginx -s stop</span><br></pre></td></tr></table></figure>
 
-
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Study/" rel="tag">Study</a>
+                </div>
+            </div>
         </div>
         
         
@@ -191,11 +194,47 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
+        <div class="buttons is-centered">
+            
+        </div>
+    </div>
+</div>
 
 
 
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/11/07/My-first-Record/">
+                <span class="level-item">My first Record</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-width="100%" data-href="http://yoursite.com/2019/11/08/nginx%20conf/" data-num-posts="5"></div>
+
+    </div>
+</div>
 </div>
                 
 
@@ -652,7 +691,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/Logo_1.svg" alt="Ashinwz&#39;s TechRoom" height="28">
+                    <img src="/images/Logo_1.svg" alt="Nginx 配置" height="28">
                 
                 </a>
                 <p class="is-size-7">
